@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My order Now - App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a21b5630f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto">
+                    <h1>MyOrderNow</h1>
+                </div>
+                <div class="col-auto">
+                    <div class="avatar-container" data-target="#profileOptions" data-toggle="modal">
+                        <img src="img/avatar.jpg" alt="">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h5 class="modal-title">Opciones</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <ul class="profile-options-list">
+                      <li>
+                          <a href="#"><i class="fas fa-user">Mi perfil</i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fas fa-map-marker-alt">Mis direcciones</i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-credit-card">Mis tarjetas</i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-danger"><i class="fas fa-times-circle">Cerrar sesión</i></a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+    </header>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 </html>
